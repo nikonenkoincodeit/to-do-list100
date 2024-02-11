@@ -1,6 +1,6 @@
 const STORAGE_KEY = "tu-do-list";
 
-function getData() {
+export function getData() {
   try {
     const localData = localStorage.getItem(STORAGE_KEY);
     return localData ? JSON.parse(localData) : [];
